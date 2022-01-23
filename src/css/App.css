@@ -1,0 +1,45 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body #root {
+  background-color: aqua;
+  color: black;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #root #quote-box {
+  background-color: blue;
+  width: 40%;
+  height: 35%;
+}
+
+body #root #quote-box #text {
+  background-color: burlywood;
+  width: 80%;
+  height: 55%;
+  margin: auto;
+}
+
+body #root #quote-box #author {
+  background-color: cadetblue;
+  width: 20%;
+}
+
+body #root #quote-box button #new-quote {
+  background-color: chartreuse;
+}
+/*# sourceMappingURL=App.css.map */
