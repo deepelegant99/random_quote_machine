@@ -11,7 +11,9 @@ function App() {
         <button>
           <div id="new-quote">this is new quote</div>
         </button>
-        <a id="tweet-quote"></a>
+        <a id="tweet-quote" target="_blank" href="twitter.com/intent/tweet">
+          Twitter
+        </a>
       </div>
     </>
   );

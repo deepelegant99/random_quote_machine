@@ -42,4 +42,8 @@ body #root #quote-box #author {
 body #root #quote-box button #new-quote {
   background-color: chartreuse;
 }
+
+body #root #quote-box #tweet-quote {
+  background-color: bisque;
+}
 /*# sourceMappingURL=App.css.map */
