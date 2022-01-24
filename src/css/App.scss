@@ -16,27 +16,40 @@ body {
 
     #quote-box {
       background-color: blue;
-      width: 40%;
-      height: 35%;
-      
+      width: 35%;
+      height: 40%;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-areas:
+      ". . . . . . . . . . . ."
+      ". g g g g g g g g g g ."
+      ". g g g g g g g g g g ."
+      ". g g g g g g g g g g ."
+      ". t t . . b b . . a a ."
+      ". . . . . . . . . . . .";
+
       #text{
-          background-color: burlywood;
-          width: 80%;
-          height: 55%;
-          margin: auto;
+          background-color: rgb(226, 98, 162);
+          grid-area: g;
+ 
       }
       #author{
           background-color: cadetblue;
-          width: 20%;
+          grid-area: a;
+
       }
       button{
+        background-color: rgb(0, 204, 255);
+        grid-area: b;
           #new-quote{
-              background-color: chartreuse;
+              
           }
       }
 
       #tweet-quote{
-        background-color: bisque;
+        grid-area: t;
+        background-color: rgb(33, 207, 47);
       }
 
     }
