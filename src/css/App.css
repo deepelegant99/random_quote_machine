@@ -66,4 +66,63 @@ body #root #quote-box #tweet-quote {
   grid-area: t;
   background-color: #21cf2f;
 }
+
+@media (max-width: 500px) {
+  body #root {
+    background-color: aqua;
+    color: black;
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body #root #quote-box {
+    background-color: blue;
+    width: 100%;
+    height: 40%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: ". . . . . . . . . . . ." "g g g g g g g g g g g g" "g g g g g g g g g g g g" "g g g g g g g g g g g g" "t t t t t t b b b b b b" "a a a a a a a a a a a a";
+  }
+  body #root #quote-box #text {
+    background-color: #e262a2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: g;
+  }
+  body #root #quote-box #author {
+    background-color: cadetblue;
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: a;
+  }
+  body #root #quote-box button {
+    background-color: #00ccff;
+    -ms-grid-row: 5;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
+    grid-area: b;
+  }
+  body #root #quote-box #tweet-quote {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: t;
+    background-color: #21cf2f;
+  }
+}
 /*# sourceMappingURL=App.css.map */
