@@ -70,18 +70,20 @@ body {
       #quote-box {
         background-color: blue;
         width: 100%;
-        height: 40%;
+        height: 100%;
         display: grid;
+        grid-gap: 0.8em;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(8, 1fr);
         grid-template-areas:
         ". . . . . . . . . . . ."
-        "g g g g g g g g g g g g"
-        "g g g g g g g g g g g g"
-        "g g g g g g g g g g g g"
-        "t t t t t t a a a a a a"
-        "b b b b b b b b b b b b"
-        "b b b b b b b b b b b b";
+        ". g g g g g g g g g g ."
+        ". g g g g g g g g g g ."
+        ". g g g g g g g g g g ."
+        ". t t t t t a a a a a ."
+        ". b b b b b b b b b b ."
+        ". b b b b b b b b b b ."
+        ". . . . . . . . . . . .";
   
         #text{
             background-color: rgb(226, 98, 162);
