@@ -93,7 +93,7 @@ body #root #quote-box #tweet-quote {
         grid-template-columns: repeat(12, 1fr);
     -ms-grid-rows: (1fr)[6];
         grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: ". . . . . . . . . . . ." "g g g g g g g g g g g g" "g g g g g g g g g g g g" "g g g g g g g g g g g g" "t t t t t t b b b b b b" "a a a a a a a a a a a a";
+        grid-template-areas: ". . . . . . . . . . . ." "g g g g g g g g g g g g" "g g g g g g g g g g g g" "g g g g g g g g g g g g" "t t t t t t a a a a a a" "b b b b b b b b b b b b" "b b b b b b b b b b b b";
   }
   body #root #quote-box #text {
     background-color: #e262a2;
@@ -105,16 +105,17 @@ body #root #quote-box #tweet-quote {
   }
   body #root #quote-box #author {
     background-color: cadetblue;
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
+    -ms-grid-row: 5;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 6;
     grid-area: a;
   }
   body #root #quote-box button {
     background-color: #00ccff;
-    -ms-grid-row: 5;
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 6;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
     grid-area: b;
   }
   body #root #quote-box #tweet-quote {
