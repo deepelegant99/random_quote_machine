@@ -65,7 +65,8 @@ body {
       #tweet-quote{
         grid-area: t;
         border-radius: $border-radius-value;
-        background-color: $twitter-area-color;
+        // background-color: $twitter-area-color;
+        color:#0099CC;
       }
 
     }

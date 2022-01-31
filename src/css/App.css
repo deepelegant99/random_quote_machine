@@ -71,7 +71,7 @@ body #root #quote-box #tweet-quote {
   -ms-grid-column-span: 2;
   grid-area: t;
   border-radius: 1.3em;
-  background-color: #74c05d;
+  color: #0099CC;
 }
 
 @media (max-width: 500px) {
