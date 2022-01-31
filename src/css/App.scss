@@ -1,9 +1,9 @@
 /* Color Variables*/
-$root-color:rgb(101, 152, 211);
-$quote-box-color:rgb(56, 56, 218);
-$text-area-color: rgb(104, 146, 153); 
+$root-color: rgb(101, 152, 211);
+$quote-box-color: rgb(56, 56, 218);
+$text-area-color: rgb(104, 146, 153);
 $twitter-area-color: rgb(116, 192, 93);
-$new-quote-color:rgb(202, 169, 169);
+$new-quote-color: rgb(202, 169, 169);
 $author-area-color: rgb(64, 104, 177);
 
 /* Border radius variable */
@@ -17,7 +17,7 @@ $border-radius-value: 1.3em;
 
 body {
   #root {
-    background-color:$root-color;
+    background-color: $root-color;
     color: black;
     height: 100vh;
     width: 100vw;
@@ -27,53 +27,49 @@ body {
 
     #quote-box {
       background-color: $quote-box-color;
-      width:40%;
+      width: 40%;
       height: 40%;
       border-radius: $border-radius-value;
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(6, 1fr);
       grid-template-areas:
-      ". . . . . . . . . . . ."
-      ". g g g g g g g g g g ."
-      ". g g g g g g g g g g ."
-      ". g g g g g g g g g g ."
-      ". t t . . b b . . a a ."
-      ". . . . . . . . . . . .";
+        ". . . . . . . . . . . ."
+        ". g g g g g g g g g g ."
+        ". g g g g g g g g g g ."
+        ". g g g g g g g g g g ."
+        ". t t . . b b . . a a ."
+        ". . . . . . . . . . . .";
 
-      #text{
-          background-color: $text-area-color;
-          border-radius: $border-radius-value;
-          grid-area: g;
- 
+      #text {
+        background-color: $text-area-color;
+        border-radius: $border-radius-value;
+        grid-area: g;
       }
-      #author{
-          background-color: $author-area-color;
-          border-radius: $border-radius-value;
-          grid-area: a;
-
+      #author {
+        background-color: $author-area-color;
+        border-radius: $border-radius-value;
+        grid-area: a;
       }
-      button{
+      button {
         background-color: $new-quote-color;
         border-radius: $border-radius-value;
         grid-area: b;
-          #new-quote{
-              
-          }
+        #new-quote {
+        }
       }
 
-      #tweet-quote{
+      #tweet-quote {
         grid-area: t;
         border-radius: $border-radius-value;
         // background-color: $twitter-area-color;
-        color:#0099CC;
+        color: #0099cc;
       }
-
     }
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
   body {
     #root {
       background-color: aqua;
@@ -83,7 +79,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-  
+
       #quote-box {
         background-color: blue;
         width: 100%;
@@ -93,40 +89,36 @@ body {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(8, 1fr);
         grid-template-areas:
-        ". . . . . . . . . . . ."
-        ". g g g g g g g g g g ."
-        ". g g g g g g g g g g ."
-        ". g g g g g g g g g g ."
-        ". t t t t t a a a a a ."
-        ". b b b b b b b b b b ."
-        ". b b b b b b b b b b ."
-        ". . . . . . . . . . . .";
-  
-        #text{
-            background-color: rgb(226, 98, 162);
-            grid-area: g;
-   
+          ". . . . . . . . . . . ."
+          ". g g g g g g g g g g ."
+          ". g g g g g g g g g g ."
+          ". g g g g g g g g g g ."
+          ". t t t t t a a a a a ."
+          ". b b b b b b b b b b ."
+          ". b b b b b b b b b b ."
+          ". . . . . . . . . . . .";
+
+        #text {
+          background-color: rgb(226, 98, 162);
+          grid-area: g;
         }
-        #author{
-            background-color: cadetblue;
-            grid-area: a;
-  
+        #author {
+          background-color: cadetblue;
+          grid-area: a;
         }
-        button{
+        button {
           background-color: rgb(0, 204, 255);
           grid-area: b;
-            #new-quote{
-                
-            }
+          #new-quote {
+          }
         }
-  
-        #tweet-quote{
+
+        #tweet-quote {
           grid-area: t;
-          background-color: rgb(33, 207, 47);
+          // background-color: $twitter-area-color;
+          color: #0099cc;
         }
-  
       }
     }
   }
-  
 }
