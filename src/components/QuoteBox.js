@@ -7,13 +7,16 @@ import { TextBox } from "./TextBox";
 import { TwitterBox } from "./TwitterBox";
 
 export const QuoteBox = () => {
+  const [colour, setColour] = React.useState('lightblue')
+  // document.body.style.backgroundColor = colour
+  document.getElementById('root').style.backgroundColor = colour
+
   return (
-    <div id="quote-box">
-      This is quote box
+    <div id="quote-box" style={{ position: 'relative' }}>
       <TextBox />
       <AuthorBox />
-      <NewQuoteBox />
+      <NewQuoteBox setColour={setColour} />
       <TwitterBox />
     </div>
-  );
+  )
 };

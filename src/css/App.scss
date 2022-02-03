@@ -5,6 +5,8 @@ $text-area-color: rgb(104, 146, 153);
 $twitter-area-color: rgb(116, 192, 93);
 $new-quote-color: rgb(202, 169, 169);
 $author-area-color: rgb(64, 104, 177);
+$background-color: #fff;
+
 
 /* Border radius variable */
 $border-radius-value: 1.3em;
@@ -72,7 +74,7 @@ body {
 @media (max-width: 500px) {
   body {
     #root {
-      background-color: aqua;
+      background-color: var(--background-color);
       color: black;
       height: 100vh;
       width: 100vw;
