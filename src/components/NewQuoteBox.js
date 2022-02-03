@@ -1,9 +1,12 @@
 import React from 'react';
 
-export const NewQuoteBox = () => {
+export const NewQuoteBox = ({ setColour }) => {
+  const handleSubmit = () => {
+    setColour('lightgreen')
+  }
   return (
-    <button>
-      <div id="new-quote">this is new quote</div>
+    <button onClick={handleSubmit} id="new-quote">
+      New quote
     </button>
-  );
-};
+  )
+}

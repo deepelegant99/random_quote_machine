@@ -8,13 +8,13 @@
 }
 
 body #root {
-  background-color: #6598d3;
   color: black;
   height: 100vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Raleway", sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -24,22 +24,30 @@ body #root {
 }
 
 body #root #quote-box {
-  background-color: #3838da;
+  background-color: white;
   width: 40%;
-  height: 40%;
-  border-radius: 1.3em;
+  height: auto;
+  border-radius: 0.3em;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   -ms-grid-rows: (1fr)[6];
       grid-template-rows: repeat(6, 1fr);
-      grid-template-areas: ". . . . . . . . . . . ." ". g g g g g g g g g g ." ". g g g g g g g g g g ." ". g g g g g g g g g g ." ". t t . . b b . . a a ." ". . . . . . . . . . . .";
+      grid-template-areas: ". . . . . . . . . . . ."
+ ". g g g g g g g g g g ."
+ ". g g g g g g g g g g ."
+ ". g g g g g g g g g g ."
+ ". t t . . b b . . a a ."
+ ". . . . . . . . . . . .";
 }
 
 body #root #quote-box #text {
-  background-color: #689299;
+  background-color: white;
   border-radius: 1.3em;
+  font-size: 1.75em;
+  font-weight: 500;
+  text-align: center;
   -ms-grid-row: 2;
   -ms-grid-row-span: 3;
   -ms-grid-column: 2;
@@ -48,7 +56,6 @@ body #root #quote-box #text {
 }
 
 body #root #quote-box #author {
-  background-color: #4068b1;
   border-radius: 1.3em;
   -ms-grid-row: 5;
   -ms-grid-column: 10;
@@ -101,7 +108,14 @@ body #root #quote-box #tweet-quote {
         grid-template-columns: repeat(12, 1fr);
     -ms-grid-rows: (1fr)[8];
         grid-template-rows: repeat(8, 1fr);
-        grid-template-areas: ". . . . . . . . . . . ." ". g g g g g g g g g g ." ". g g g g g g g g g g ." ". g g g g g g g g g g ." ". t t t t t a a a a a ." ". b b b b b b b b b b ." ". b b b b b b b b b b ." ". . . . . . . . . . . .";
+        grid-template-areas: ". . . . . . . . . . . ."
+ ". g g g g g g g g g g ."
+ ". g g g g g g g g g g ."
+ ". g g g g g g g g g g ."
+ ". t t t t t a a a a a ."
+ ". b b b b b b b b b b ."
+ ". b b b b b b b b b b ."
+ ". . . . . . . . . . . .";
   }
   body #root #quote-box #text {
     background-color: #e262a2;
