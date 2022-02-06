@@ -23,15 +23,23 @@ body {
     color: black;
     height: 100vh;
     width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: "Raleway", sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
     #quote-box {
-      background-color: $quote-box-color;
-      width: 40%;
-      height: 40%;
-      border-radius: $border-radius-value;
+      background-color: white;
+      width: 40%;    
+      height: auto;
+      border-radius: 0.3em;
+      display: -ms-grid;
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(6, 1fr);
@@ -44,27 +52,41 @@ body {
         ". . . . . . . . . . . .";
 
       #text {
-        background-color: $text-area-color;
-        border-radius: $border-radius-value;
+        background-color: white;
+        border-radius: 1.3em;
+        font-size: 1.75em;
+        font-weight: 500;
+        text-align: center;
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 10;
         grid-area: g;
       }
       #author {
-        background-color: $author-area-color;
-        border-radius: $border-radius-value;
+        border-radius: 1.3em;
+        -ms-grid-row: 5;
+        -ms-grid-column: 10;
+        -ms-grid-column-span: 2;
         grid-area: a;
       }
       button {
-        background-color: $new-quote-color;
-        border-radius: $border-radius-value;
+        background-color: #caa9a9;
+        border-radius: 1.3em;
+        -ms-grid-row: 5;
+        -ms-grid-column: 6;
+        -ms-grid-column-span: 2;
         grid-area: b;
         #new-quote {
         }
       }
 
       #tweet-quote {
+        -ms-grid-row: 5;
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 2;
         grid-area: t;
-        border-radius: $border-radius-value;
-        // background-color: $twitter-area-color;
+        border-radius: 1.3em;
         color: #0099cc;
       }
     }
