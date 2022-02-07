@@ -11,13 +11,14 @@ export const QuoteBox = () => {
   const [colour, setColour] = useState("lightblue");
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("Phillip");
+  const [rand, setRandom] = useState(random);
 
   useEffect(() => {
     fetch(api_url)
       .then((results) => results.json())
       .then((data) => {
-        setQuote(data[random].text);
-        setAuthor(data[random].author);
+        setQuote(data[rand].text);
+        setAuthor(data[rand].author);
       });
   }, [colour]);
   
@@ -27,7 +28,7 @@ export const QuoteBox = () => {
     <div id="quote-box" style={{ position: "relative" }}>
       <TextBox quote={quote} />
       <AuthorBox author={author} />
-      <NewQuoteBox setColour={setColour} />
+      <NewQuoteBox setColour={setColour}  setRandom={setRandom}/>
       <TwitterBox />
     </div>
   );
