@@ -34,7 +34,6 @@ export const QuoteBox = () => {
     getapi(api_url);
 
   
-  // document.body.style.backgroundColor = colour
   document.getElementById('root').style.backgroundColor = colour
 
   return (
