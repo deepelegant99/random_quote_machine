@@ -20,7 +20,7 @@ export const QuoteBox = () => {
         setQuote(data[rand].text);
         setAuthor(data[rand].author);
       });
-  }, [colour]);
+  }, [colour, rand]);
   
   document.getElementById('root').style.backgroundColor = colour
 
