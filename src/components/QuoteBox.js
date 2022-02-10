@@ -10,7 +10,7 @@ const api_url = "https://type.fit/api/quotes";
 export const QuoteBox = () => {
   const [colour, setColour] = useState("lightblue");
   const [quote, setQuote] = useState("");
-  const [author, setAuthor] = useState("Phillip");
+  const [author, setAuthor] = useState("");
   const [rand, setRandom] = useState(random);
 
   useEffect(() => {
@@ -21,15 +21,15 @@ export const QuoteBox = () => {
         setAuthor(data[rand].author);
       });
   }, [colour, rand]);
-  
-  document.getElementById('root').style.backgroundColor = colour
+
+  document.getElementById("root").style.backgroundColor = colour;
 
   return (
     <div id="quote-box" style={{ position: "relative" }}>
       <TextBox quote={quote} />
       <AuthorBox author={author} />
-      <NewQuoteBox setColour={setColour}  setRandom={setRandom}/>
-      <TwitterBox />
+      <NewQuoteBox setColour={setColour} setRandom={setRandom} />
+      <TwitterBox colour={colour} />
     </div>
   );
 };

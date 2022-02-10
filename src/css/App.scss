@@ -1,5 +1,5 @@
 /* Color Variables*/
-$root-color: rgb(101, 152, 211);
+$root-color: rgb(108, 155, 209);
 $quote-box-color: rgb(56, 56, 218);
 $text-area-color: rgb(104, 146, 153);
 $twitter-area-color: rgb(116, 192, 93);
@@ -88,6 +88,7 @@ body {
         grid-area: t;
         border-radius: 1.3em;
         color: #0099cc;
+
       }
     }
   }
@@ -140,7 +141,7 @@ body {
         #tweet-quote {
           grid-area: t;
           // background-color: $twitter-area-color;
-          color: #0099cc;
+          color: #0099cc;          
         }
       }
     }

@@ -1,20 +1,27 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTumblrSquare,
   faTwitterSquare
-} from '@fortawesome/free-brands-svg-icons'
+} from "@fortawesome/free-brands-svg-icons";
 
-export const TwitterBox = () => {
+export const TwitterBox = ({ colour }) => {
   return (
     // <a id="tweet-quote" target="_blank" href="twitter.com/intent/tweet">
     //   Twitter
     // </a>
-    <div style={{ position: 'absolute', left: '40px', bottom: '20px' }}>
-      <FontAwesomeIcon icon={faTwitterSquare} style={styles.icon} />
-      <FontAwesomeIcon icon={faTumblrSquare} style={styles.icon} />
-    </div>
-  )
-}
+    <div style={{ position: "absolute", left: "40px", bottom: "20px" }}>
+      {/* <a target='_blank' href="twitter.com/intent/tweet"><FontAwesomeIcon icon={faTwitterSquare} style={styles.icon} /></a> */}
+      <a target="_blank" href="https://twitter.com/intent/tweet">
+        <FontAwesomeIcon
+          icon={faTwitterSquare}
+          style={{ color: colour, width: "1.8em", height: "auto" }}
+        />
+      </a>
 
-const styles = { icon: { fontSize: '35px', margin: '2px' } }
+      {/* <FontAwesomeIcon icon={faTumblrSquare} style={styles.icon} /> */}
+    </div>
+  );
+};
+
+/*const styles = { icon: { fontSize: "50px", margin: "2px" } };*/
