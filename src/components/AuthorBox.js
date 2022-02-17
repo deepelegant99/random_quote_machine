@@ -1,9 +1,9 @@
 import React from "react";
 
-export const AuthorBox = ({ author }) => {
+export const AuthorBox = ({ color, author }) => {
   return (
-    <div style={{ width: "100%" }} id="author">
-      {author};
-    </div>
+    <p style={{ width: "100%", color:color }} id="author">
+      {author}
+    </p>
   );
 };

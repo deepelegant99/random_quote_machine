@@ -1,6 +1,6 @@
 import React from "react";
 
-export const NewQuoteBox = ({ setColour, setRandom }) => {
+export const NewQuoteBox = ({ color, setColour, setRandom }) => {
   const handleSubmit = () => {
     let random = Math.floor(Math.random() * 1643);
     let randomColor = Math.floor(Math.random() * 5);
@@ -14,7 +14,7 @@ export const NewQuoteBox = ({ setColour, setRandom }) => {
     setRandom(random);
   };
   return (
-    <button onClick={handleSubmit} id="new-quote">
+    <button style={{color:color, border: `2px solid {color}`, }} onClick={handleSubmit} id="new-quote">
       New quote
     </button>
   );

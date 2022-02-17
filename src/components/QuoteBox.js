@@ -26,9 +26,9 @@ export const QuoteBox = () => {
 
   return (
     <div id="quote-box" style={{ position: "relative" }}>
-      <TextBox quote={quote} />
-      <AuthorBox author={author} />
-      <NewQuoteBox setColour={setColour} setRandom={setRandom} />
+      <TextBox color={colour} quote={quote} />
+      <AuthorBox color={colour} author={author} />
+      <NewQuoteBox color={colour} setColour={setColour} setRandom={setRandom} />
       <TwitterBox colour={colour} />
     </div>
   );
