@@ -25,7 +25,7 @@ export const QuoteBox = () => {
   document.getElementById("root").style.backgroundColor = colour;
 
   return (
-    <div id="quote-box" style={{ position: "relative" }}>
+    <div id="quote-box" style={{ position: "relative", color:  colour}}>
       <TextBox quote={quote} />
       <AuthorBox author={author} />
       <NewQuoteBox setColour={setColour} setRandom={setRandom} />
