@@ -14,7 +14,7 @@ export const NewQuoteBox = ({ color, setColour, setRandom }) => {
     setRandom(random);
   };
   return (
-    <button style={{color:color, border: `2px solid {color}`, }} onClick={handleSubmit} id="new-quote">
+    <button style={{color:color, border: `2px solid {color}`, backgroundColor: 'gray'}} onClick={handleSubmit} id="new-quote">
       New quote
     </button>
   );
