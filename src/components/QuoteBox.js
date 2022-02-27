@@ -25,10 +25,10 @@ export const QuoteBox = () => {
   document.getElementById("root").style.backgroundColor = colour;
 
   return (
-    <div id="quote-box" style={{ position: "relative", color:  colour}}>
-      <TextBox quote={quote} />
-      <AuthorBox author={author} />
-      <NewQuoteBox setColour={setColour} setRandom={setRandom} />
+    <div id="quote-box" style={{ position: "relative" }}>
+      <TextBox color={colour} quote={quote} />
+      <AuthorBox color={colour} author={author} />
+      <NewQuoteBox color={colour} setColour={setColour} setRandom={setRandom} />
       <TwitterBox colour={colour} />
     </div>
   );

@@ -12,7 +12,7 @@ export const TwitterBox = ({ colour }) => {
     // </a>
     <div style={{ position: "absolute", left: "40px", bottom: "20px" }}>
       {/* <a target='_blank' href="twitter.com/intent/tweet"><FontAwesomeIcon icon={faTwitterSquare} style={styles.icon} /></a> */}
-      <a target="_blank" href="https://twitter.com/intent/tweet">
+      <a target="_blank" href="https://twitter.com/intent/tweet" id="tweet-quote">
         <FontAwesomeIcon
           icon={faTwitterSquare}
           style={{ color: colour, width: "1.8em", height: "auto" }}
